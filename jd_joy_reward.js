@@ -214,7 +214,7 @@ cron "0 0-16/8 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/maste
   }
   function getExchangeRewards() {
     let opt = {
-      url: "//jdjoy.jd.com/common/gift/getBeanConfigs?reqSource=h5",
+      url: "//jdjoy.jd.com/common/gift/getBeanConfigs?reqSource=h5&lks=3129de0ad94441fbdc88858fcfc283e4&1622823178185&invokeKey=Oex5GmEuqGep1WLC",
       method: "GET",
       data: {},
       credentials: "include",
@@ -258,7 +258,7 @@ cron "0 0-16/8 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/maste
   function exchange(saleInfoId, orderSource) {
     let body = {"buyParam":{"orderSource":orderSource,"saleInfoId":saleInfoId},"deviceInfo":{}}
     let opt = {
-      "url": "//jdjoy.jd.com/common/gift/new/exchange",
+      "url": "//jdjoy.jd.com/common/gift/new/exchange?reqSource=h5&lks=3129de0ad94441fbdc88858fcfc283e4&1622823178185&invokeKey=Oex5GmEuqGep1WLC",
       "data":body,
       "credentials":"include","method":"POST","header":{"content-type":"application/json"}
     }
